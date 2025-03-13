@@ -106,4 +106,4 @@ The scripts perform the update by running yt-dlp.exe -U, which checks for and in
 
 ## Disclaimer:
 
-This project is not affiliated with or endorsed by Yellow Dog Man Studios or Resonite. The scripts are provided as-is for personal use to clean up cache files from the game Resonite.
+This project is not affiliated with or endorsed by Yellow Dog Man Studios or Resonite. The scripts are provided as-is for personal use to update `yt-dlp.exe` file for Resonite.
