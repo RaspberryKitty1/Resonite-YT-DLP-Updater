@@ -118,25 +118,5 @@ python yt-dlp-updater(NoTK required).py
 
 ## ⚠️ Disclaimer
 
-<<<<<<< Updated upstream
-
-## Notes:
-
-These scripts are mainly for use with Resonite, but they should work with other installations of yt-dlp as well, provided the correct executable path is set.
-
-The scripts perform the update by running yt-dlp.exe -U, which checks for and installs updates to yt-dlp.
-
-## Disclaimer:
-
-This project is not affiliated with or endorsed by Yellow Dog Man Studios or Resonite. The scripts are provided as-is for personal use to update `yt-dlp.exe` file for Resonite.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-=======
 This project is **not affiliated with or endorsed by Yellow Dog Man Studios or Resonite**.  
 The scripts are provided **as-is** for personal use to help you keep `yt-dlp.exe` up to date.
->>>>>>> Stashed changes
