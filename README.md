@@ -1,102 +1,124 @@
-
-
 # Resonite-YT-DLP-Updater
 
-A script to update yt-dlp.exe in your Resonite install directory.
+A collection of scripts to update `yt-dlp.exe` in your **Resonite** installation directory.
 
-Original script by Knackrack615 for NeosVR.
+- **Original Script by**: [Knackrack615](https://github.com/Knackrack615) (for NeosVR)  
+- **Ported and Expanded by**: [Raspberrykitty1](https://github.com/Raspberrykitty1)
 
-Ported by Raspberrykitty1.
+Although Resonite typically includes a bundled version of `yt-dlp`, these scripts are useful for updating it manually—especially when significant updates occur before an official Resonite patch is released.
 
-Although Resonite is usually kept up-to-date, these scripts are here in case of significant updates to yt-dlp while waiting for a Resonite update.
-The original script was only a .vbs file.
+---
 
-I have ported the original script and also converted it into Python, JavaScript, and VBScript for more versatility.
+## 📁 Prerequisites
 
-How to Use:
+Ensure `yt-dlp.exe` is located at the default Resonite path:
 
-## Prerequisites:
+```
+C:\Program Files (x86)\Steam\steamapps\common\Resonite\RuntimeData\yt-dlp.exe
+```
 
-Ensure that yt-dlp.exe is located in the Resonite installation directory at C:\Program Files (x86)\Steam\steamapps\common\Resonite\RuntimeData\yt-dlp.exe. If it's located elsewhere, update the paths in the scripts accordingly.
+If your installation differs, update the executable path in the script(s) accordingly.
 
-## Running the Scripts:
+---
 
-You have several options for updating yt-dlp using different scripts:
+## ▶️ How to Use
 
-1. JavaScript (yt-dlp-updater.js)
+You can use any of the following scripts, depending on your environment and preference:
 
-Requirements: Node.js installed on your system.
+---
 
-How to run:
+### 1. **JavaScript** (`yt-dlp-updater.js`)
 
-Open a terminal or command prompt.
+- **Requirements**: [Node.js](https://nodejs.org/) installed.
 
-Navigate to the directory where the yt-dlp-updater.js script is located.
+**How to run**:
 
-Run the command:
+```bash
+# In terminal or command prompt
+node yt-dlp-updater.js
+```
 
-```node yt-dlp-updater.js```
+- The script will detect the path and ask for confirmation.
+- Upon confirmation, it will run `yt-dlp.exe -U` to update.
 
-Follow the prompts in the terminal. You will be asked if the detected path is correct. If confirmed, the script will update yt-dlp.
+---
 
+### 2. **VBScript** (`yt-dlp-updater.vbs`)
 
+- **Requirements**: Windows Script Host (included with Windows).
 
-2. VBScript (yt-dlp-updater.vbs)
+**How to run**:
 
-Requirements: Windows Script Host (WSH) (default on Windows).
+- Double-click the `.vbs` file.
+- A prompt will appear asking for confirmation of the `yt-dlp.exe` path.
+- If correct, it will proceed to update.
 
-How to run:
+---
 
-Double-click the yt-dlp-updater.vbs file.
+### 3. **Python with GUI** (`yt-dlp-updater.py`)
 
-A prompt will appear asking you to confirm the path of yt-dlp.exe. If correct, it will update the executable automatically.
+- **Requirements**: Python (with Tkinter module installed — included by default in most installations).
 
+**How to run**:
 
+```bash
+python yt-dlp-updater.py
+```
 
-3. Python (yt-dlp-updater.py)
+- A simple Tkinter GUI will prompt you to confirm the executable path.
+- Upon confirmation, the update will be performed.
 
-Requirements: Python installed on your system along with TK. 
+---
 
-How to run:
+### 4. **Python (No GUI)** (`yt-dlp-updater(NoTK required).py`)
 
-Open a terminal or command prompt.
+- **Requirements**: Python installed (no GUI modules needed).
 
-Navigate to the directory where the yt-dlp-updater.py script is located.
+**How to run**:
 
-Run the command:
+```bash
+python yt-dlp-updater(NoTK required).py
+```
 
-```python yt-dlp-updater.py```
+- Command-line-based prompts will guide you through confirming the path and proceeding with the update.
 
-A Tkinter window will appear asking if the path is correct. Confirm and the script will update yt-dlp.
+---
 
-4. Python (No Tkinter Required) (yt-dlp-updater(NoTK required).py)
+## 🛠 Troubleshooting
 
-Requirements: Python installed on your system.
+### 🔍 **yt-dlp.exe Not Found**
 
-How to run:
+- Double-check the default path:
 
-Open a terminal or command prompt.
+  ```
+  C:\Program Files (x86)\Steam\steamapps\common\Resonite\RuntimeData\yt-dlp.exe
+  ```
 
-Navigate to the directory where the yt-dlp-updater(NoTK required).py script is located.
+- If different, edit the script to match your actual `yt-dlp.exe` location.
 
-Run the command:
+### ⚙️ **Script Not Running**
 
-```python yt-dlp-updater(NoTK required).py```
+- Make sure you have the appropriate environment installed:
+  - **Node.js** for JavaScript
+  - **Python** for `.py` scripts
+  - **Windows Script Host** for VBScript (enabled by default)
 
-This version does not require Tkinter and will prompt you via the command line for confirmation to update yt-dlp.
+---
 
-## Troubleshooting:
+## 📝 Notes
 
-yt-dlp Not Found:
-If you get an error that yt-dlp.exe is not found, double-check that it is located in the correct directory:
+- While designed for **Resonite**, these scripts can be adapted for any `yt-dlp.exe` install—just update the path in the script.
+- The core update functionality relies on:
 
-`C:\Program Files (x86)\Steam\steamapps\common\Resonite\RuntimeData\yt-dlp.exe`
+  ```bash
+  yt-dlp.exe -U
+  ```
 
-If it's located elsewhere, you will need to update the path in the script.
+---
 
-Script Execution Issues:
-Make sure you have the required software (`Node.js`, `Python`, or Windows Script Host) installed on your system, depending on which script you are running.
+## ⚠️ Disclaimer
 
+<<<<<<< Updated upstream
 
 ## Notes:
 
@@ -114,3 +136,7 @@ This project is not affiliated with or endorsed by Yellow Dog Man Studios or Res
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+=======
+This project is **not affiliated with or endorsed by Yellow Dog Man Studios or Resonite**.  
+The scripts are provided **as-is** for personal use to help you keep `yt-dlp.exe` up to date.
+>>>>>>> Stashed changes
