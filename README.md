@@ -13,7 +13,7 @@ Although Resonite typically includes a bundled version of `yt-dlp`, these script
 
 Ensure `yt-dlp.exe` is located at the default Resonite path:
 
-```
+```plaintext
 C:\Program Files (x86)\Steam\steamapps\common\Resonite\RuntimeData\yt-dlp.exe
 ```
 
@@ -90,7 +90,7 @@ python yt-dlp-updater(NoTK required).py
 
 - Double-check the default path:
 
-  ```
+  ```plaintext
   C:\Program Files (x86)\Steam\steamapps\common\Resonite\RuntimeData\yt-dlp.exe
   ```
 
